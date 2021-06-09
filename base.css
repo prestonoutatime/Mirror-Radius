@@ -11,7 +11,7 @@
 body {
 	margin: 0;
 	--color-text: #a5a5a5;
-	--color-bg: #111111;
+	--color-bg: #000000;
 	--color-link: #d6af7c;
 	--color-link-hover: #fff;
 	--color-text-circle-1: #555555;
@@ -26,8 +26,8 @@ body {
 	--font-weight-circle-3: 400;
 	--font-circle-4: tenon, sans-serif;
 	--font-weight-circle-4: 300;
-	--color-button: #d6ae7c;
-	--color-text-button: #1d1812;
+	--color-button: #777777;
+	--color-text-button: #000000;
 	--dim-button: 90px;
 	color: var(--color-text);
 	background-color: var(--color-bg);
