@@ -202,9 +202,12 @@ a:focus-visible {
 }
 
 .content p {
-	font-size: 2rem;
-	font-size: clamp(1.25rem,6vw,2.15rem);
-	line-height: 1.25;
+	font-size: 39em;
+	font-size: 200px;
+	-webkit-text-stroke: 1px #ffffff;
+	-webkit-text-fill-color: transparent;
+	text-align: justify;
+	line-height: 0.7;
 	max-width: 900px;
 	margin: 0;
 	pointer-events: none;
@@ -221,9 +224,6 @@ a:focus-visible {
 	left: calc(50% - var(--dim) / 2 );
 }
 
-.demo-3 .circles {
-	--dim: 206vmin;
-}
 
 .circles__text {
 	text-transform: uppercase;
