@@ -202,11 +202,10 @@ a:focus-visible {
 }
 
 .content p {
-	font-size: 39em;
-	font-size: 200px;
+	font-size: 23vw;
 	-webkit-text-stroke: 1px #ffffff;
 	-webkit-text-fill-color: transparent;
-	text-align: justify;
+	text-align: center;
 	line-height: 0.7;
 	max-width: 900px;
 	margin: 0;
