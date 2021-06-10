@@ -8,9 +8,31 @@
 	font-size: 16px;
 }
 
+/* /////   Fonts   ///// */
+
 @font-face {
-font-family: "Hyperspace";
-src: url("Hyperspace.otf");
+  font-family: 'Hyperspace';
+  src: url('assets/Hyperspace.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hyperspace';
+  src: url('assets/Hyperspace Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hyperspace';
+  src: url('assets/Hyperspace Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Hyperspace';
+  src: url('assets/Hyperspace Bold Italic.otf');
+  font-weight: bold;
+  font-style: italic;
 }
 
 body {
