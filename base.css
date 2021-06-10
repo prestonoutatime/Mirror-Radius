@@ -8,6 +8,11 @@
 	font-size: 16px;
 }
 
+@font-face {
+font-family: "Hyperspace";
+src: url("Hyperspace.otf");
+}
+
 body {
 	margin: 0;
 	--color-text: #a5a5a5;
@@ -18,20 +23,20 @@ body {
 	--color-text-circle-2: #444444;
 	--color-text-circle-3: #333333;
 	--color-text-circle-4: #222222;
-	--font-circle-1: tenon, sans-serif;
+	--font-circle-1: Hyperspace, bold, sans-serif;
 	--font-weight-circle-1: 300;
-	--font-circle-2: tenon, sans-serif;
+	--font-circle-2: Hyperspace, sans-serif;
 	--font-weight-circle-2: 400;
-	--font-circle-3: tenon, sans-serif;
+	--font-circle-3: Hyperspace, sans-serif;
 	--font-weight-circle-3: 400;
-	--font-circle-4: tenon, sans-serif;
+	--font-circle-4: Hyperspace, sans-serif;
 	--font-weight-circle-4: 300;
 	--color-button: #777777;
 	--color-text-button: #000000;
 	--dim-button: 90px;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: tenon, sans-serif;
+	font-family: Hyperspace, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -203,10 +208,13 @@ a:focus-visible {
 
 .content p {
 	font-size: 23vw;
+	font-size: clamp(80px, 23vw, 240px);
+  font-family: Hyperspace;
+	font-kerning: auto;
 	-webkit-text-stroke: 1px #ffffff;
 	-webkit-text-fill-color: transparent;
 	text-align: center;
-	line-height: 0.7;
+	line-height: 0.8;
 	max-width: 900px;
 	margin: 0;
 	pointer-events: none;
