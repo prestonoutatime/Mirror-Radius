@@ -24,6 +24,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 <style>
 		body {
 				overflow: hidden; /* disable scrolling / rubberband effect on mobile */
+				background-color: #333333;
 		}
 
 		canvas {
@@ -34,50 +35,25 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 </style>
 </head>
 
-<body class="loading">
+<body class="demo-1 loading">
 	<main>
-		<svg class="circles" width="100%" height="100%" viewBox="0 0 1400 1400">
-			<def>
-				<path id="circle-1" d="M250,700.5A450.5,450.5 0 1 11151,700.5A450.5,450.5 0 1 1250,700.5" />
-				<path id="circle-2" d="M382,700.5A318.5,318.5 0 1 11019,700.5A318.5,318.5 0 1 1382,700.5" />
-				<path id="circle-3" d="M487,700.5A213.5,213.5 0 1 1914,700.5A213.5,213.5 0 1 1487,700.5" />
-				<path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
-			</def>
-			<text class="circles__text circles__text--1">
-				<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">MIRROR&nbsp;RADIUS&nbsp;MIRROR&nbsp;RADIUS&nbsp;</textPath>
-			</text>
-			<text class="circles__text circles__text--2">
-				<textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="1950">PRESTON.OUTATIME&nbsp;</textPath>
-			</text>
-			<text class="circles__text circles__text--3">
-				<textPath class="circles__text-path" xlink:href="#circle-3" aria-label="" >MIRROR&nbsp;RADIUS&nbsp;</textPath>
-			</text>
-			<text class="circles__text circles__text--4">
-				<textPath class="circles__text-path" xlink:href="#circle-4" aria-label="" textLength="836">PRESTON.OUTATIME&nbsp;</textPath>
-			</text>
-		</svg>
 		<div class="frame">
 			<h1 class="frame__title">PRESTON.OUTATIME - MIRROR RADIUS</h1>
 			<nav class="frame__links">
-				<a href="#">TopRight</a>
-				<a href="#">TopRight</a>
-				<a href="#">TopRight</a>
+				<a href="#">TopRight 1</a>
+				<a href="#">TopRight 2</a>
+				<a href="#">TopRight 3</a>
 			</nav>
 			<nav class="frame__demos">
-				<a href="#" class="frame__demo frame__demo--current">Listen</a>
+				<a href="index.html" class="frame__demo">Listen</a>
 				<a href="#" class="frame__demo">Buy</a>
-				<a href="watch.html" class="frame__demo">Watch</a>
+				<a href="#" class="frame__demo frame__demo--current">Watch</a>
 			</nav>
 		</div>
-		<div class="content">
-			<-- <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas> -->
-
-			<p>MIRROR RADIUS</p>
+		<div class="videoContent">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/V5-bnOj0eMM?controls=0" title="YouTube video player" frameborder="0" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/D1cX-b4Gd3w?controls=0" title="YouTube video player" frameborder="0" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		<button class="enter">
-			<div class="enter__bg"></div>
-			<span class="enter__text">ENTER</span>
-		</button>
 	</main>
 	<script src="demo1.js"></script>
 	<script type="text/javascript" src="js/patch.js" async></script>

@@ -45,20 +45,20 @@ body {
 	--color-text-circle-2: #444444;
 	--color-text-circle-3: #333333;
 	--color-text-circle-4: #222222;
-	--font-circle-1: Hyperspace, bold, sans-serif;
+	--font-circle-1: Open, sans-serif;
 	--font-weight-circle-1: 300;
-	--font-circle-2: Hyperspace, sans-serif;
+	--font-circle-2: Open, sans-serif;
 	--font-weight-circle-2: 400;
-	--font-circle-3: Hyperspace, sans-serif;
+	--font-circle-3: Open, sans-serif;
 	--font-weight-circle-3: 400;
-	--font-circle-4: Hyperspace, sans-serif;
+	--font-circle-4: Open, sans-serif;
 	--font-weight-circle-4: 300;
 	--color-button: #777777;
 	--color-text-button: #000000;
 	--dim-button: 90px;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: Hyperspace, sans-serif;
+	font-family: Open, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -212,12 +212,24 @@ a:focus-visible {
 	opacity: 0;
 }
 
+.videoContent {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	padding: 2rem;
+	height: calc(100vh - 17rem);
+	position: relative;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
 .content {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
 	padding: 2rem;
-	height: calc(100vh - 13rem);
+	height: calc(100vh - 17rem);
 	position: relative;
 	justify-content: flex-start;
 	align-items: center;
@@ -241,6 +253,9 @@ a:focus-visible {
 	margin: 0;
 	pointer-events: none;
 	will-change: transform;
+}
+.videoContent iframe {
+	margin: 40px 10px;
 }
 
 .circles {
@@ -337,5 +352,21 @@ a:focus-visible {
 		height: 100vh;
 		justify-content: center;
 		text-align: left;
+	}
+	.videoContent {
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+}
+
+@media screen and (max-width: 53em) {
+	.videoContent {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
